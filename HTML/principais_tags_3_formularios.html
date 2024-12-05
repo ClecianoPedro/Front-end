@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Formulário</h1>
+        <hr>
+        <form action="" method="post"> <!-- action é a URL para onde a requisição vai ser enviada, method é método HTTP -->
+            <div>
+                <label for="texto">Nome</label>
+                <input type="text" id="texto" name="nome">
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="data">Data de Nascimento</label>
+                <input type="date" id="data" name="data">
+            </div>
+            <div>
+                <label for="hora">Horário</label>
+                <input type="time" id="hora" name="hora">
+            </div>
+            <div>
+                <label for="numero">Número</label>
+                <input type="number" id="numero" name="numero">
+            </div>
+            <div>
+                <label for="arquivo">Arquivo</label>
+                <input type="file" id="arquivo" name="arquivo">
+            </div>
+            <div>
+                <label for="url">URL</label>
+                <input type="url" id="url" name="url">
+            </div>
+            <div>
+                <label for="cor">Cor</label>
+                <input type="color" id="cor" name="cor">
+            </div>
+            <div>
+                <label for="Alcance">Alcance</label>
+                <input type="range" id="Alcance" name="alcance" value="100" min="20" max="200">
+            </div>
+            <div>
+                <label for="checkbox">Checkbox</label>
+                <input type="checkbox" id="checkbox" name="checkbox" checked> <!-- type checkbox pode marcar várias caixas de seleção, checked significa que inicia marcado por padrão-->
+            </div>
+            <div>
+                <label for="checkbox_radio">Checkbox_Radio</label>
+                <input type="radio" id="checkbox_radio" name="checkbox_radio"> <!-- type radio só pode marcar 1 das caixas de seleção -->
+            </div>
+            <div>
+                <input type="reset" id="reset" name="reset" value="Limpar"> <!-- value define o nome do botão reset -->
+            </div>
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea> <!-- É uma caixa de texto redimensionável, cols é quantas colunas tem e rows quantas linhas tem a caixa de texto -->
+            <div>
+                <select name="select" id="select"> <!-- Menu suspenso de opções -->
+                    <option value="" disabled selected>Selecione uma das opções</option> <!-- disabled significa que ela não pode ser selecionada, selected quer dizer que ela inicia selecionada -->
+                    <option value="receita">Receita</option>
+                    <option value="despesa">Despesa</option>
+                    <option value="transferencia">Transferência</option> <!-- Corresponde a 1 opção, value é o que vai ser enviado quando eu submeter o formulário -->
+                </select>
+            </div>
+            <div>
+                <input type="submit" id="enviar" name="enviar" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

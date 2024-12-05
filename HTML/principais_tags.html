@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!-- Tipo de documento, HTML5 por padrão -->
+<html lang="pt-br"> <!-- Linguagem da página, importante para acessibilidade -->
+<head> <!-- Cabeçalho da página, informações não visíveis -->
+    <meta charset="UTF-8"> <!-- Caracteres que compõem a página no caso UTF-8 (UCS Transformation Format 8) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pega toda a largura da tela do usuário e define zoom em 100% -->
+    <title>Principais TAGS HTML</title> <!-- Titulo da aba do navegador -->
+</head>
+<body> <!-- O que vai ser exibido na página ou corpo da página literalmente -->
+    <header></header>  <!-- Cabeçalho -->
+    <nav></nav>  <!-- Barra de navegação -->
+    <main></main> <!-- Conteúdo principal da página deve estar aqui -->
+    <footer></footer> <!-- Rodapé da página -->
+    <aside></aside> <!-- Barra lateral -->
+    <h1>H1</h1> <!-- Titulo Principal nivel 1 -->
+    <h2>H2</h2> <!-- Sub-titulo nivel 2 -->
+    <h3>H3</h3> <!-- Sub-titulo  nivel 3 -->
+    <h4>H4</h4> <!-- Sub-titulo  nivel 4 -->
+    <h5>H5</h5> <!-- Sub-titulo  nivel 5 -->
+    <h6>H6</h6> <!-- Sub-titulo  nivel 6 -->
+    <p>Parágrafo</p> <!-- Parágrafo, pula linha automaticamente -->
+    <div>Div</div> <!-- Conteúdo genérico -->
+    <a href="">Link</a> <!-- Link -->
+    <table>Tabela</table> <!-- Tabela -->
+    <ul></ul> <!-- Lista não-ordenada, deve ser seguido por <li> -->
+    <ol></ol> <!-- Lista ordenada, deve ser seguido por <li> -->
+    <li></li> <!-- Item da lista <ul> ou <ol> -->
+    <img src="" alt="Imagem">  <!-- Imagem, abre e fecha nela mesma -->
+    <br> <!-- Quebra de linha -->
+    <hr> <!-- Divisão de titulos -->
+    <span></span> <!-- Edição inline, não recomendada -->
+    <section></section>  <!-- Cria uma seção dentro da página -->
+    <figure></figure> <!-- Adiciona uma figura/imagem -->
+    <figcaption></figcaption>  <!-- Legenda para a figura/imagem -->
+    <form action=""></form> <!-- Formulário, action é  -->
+    <label for=""></label>  <!-- Define um rótulo para a caixa de texto mencionada no "for" passando o id do input -->
+    <input type="text" id="texto" placeholder="Nome" value="Cleciano" name="nome"> <!-- Entrada de texto, type é o tipo do input, seja ele: texto, email, senha, etc. placeholder é o que vai aparecer dentro do input, value define qual valor vai iniciar dentro do input, name é a forma como o JS vai identificar o campo em particular -->
+    <textarea name="bio" id="bio" cols="30" rows="10"></textarea> <!-- É uma caixa de texto redimensionável, cols é quantas colunas tem e rows quantas linhas tem a caixa de texto -->
+    <select name="select" id="select"> <!-- Menu suspenso de opções -->
+        <option value="" disabled>Selecione uma das opções</option> <!-- disabled significa que ela não pode ser selecionada, selected quer dizer que ela inicia selecionada -->
+        <option value="receita">Receita</option>
+        <option value="despesa">Despesa</option>
+        <option value="transferencia">Transferência</option> <!-- Corresponde a 1 opção, value é o que vai ser enviado quando eu submeter o formulário -->
+    </select>
+</body>
+</html>
