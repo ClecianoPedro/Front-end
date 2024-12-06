@@ -1,0 +1,74 @@
+/* Seletor universal */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Pseudo-classe */
+:root /* Importante */{
+    font-size: 62.5%; /* Por padrão é 16px, porcentagem pensando nas medidas em px (16px*62.5%=10) e ai 16px é igual à 1.6rem, medidas rem levam em consideração esse font-size do "root" e respeita as configurações de fonte e acessibilidade do navegador do usuário */
+}
+
+/* Seletor de TAG */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Fontes não-serifadas não tem pontas, fontes serifadas tem pontas */
+}
+
+/* Seletor de TAG */
+h1 {
+    color: blue; /* Cor da TAG, no caso TAG h1, posso utilizar hexadecimais (#fff, 3 ou 6 digitos) */
+    background-color: white; /* Cor de fundo */
+    font-size: 5.0rem; /* Tamanho da fonte da TAG em rem é recomendado */
+    font-weight: 900; /* Peso da fonte ou grossura da fonte da TAG */
+    font-style: italic; /* Estilo de fonte, no caso fonte itálica */
+    text-decoration: line-through; /* Decoração de texto, no caso linha no meio do texto */
+    text-transform: capitalize; /* Transforma texto em minúsculo, maiúsculo ou primeira letra maiúscula */
+    text-align: center; /* Ajusta o texto a direita, esquerda, centro, justify (Deixa o texto mais agradável), etc. */
+    font-family: Arial, Helvetica, sans-serif; /* Preferência de fonte da esquerda para à direita */
+}
+
+/* Seletor de várias TAGs */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Seletor de TAG */
+p {
+    font-size: 1.8rem;
+    text-align: justify;
+    text-indent: 90px; /* Identação da primeira linha de um texto */
+}
+
+/* Seletor de TAG */
+a {
+    font-size: 2.4rem;
+    color: red;
+}
+
+/* Seletor de TAG com pseudo-classe */
+a:visited {
+    color: darkgreen;
+}
+
+/* Seletor de TAG com pseudo-classe */
+a:hover /* Deve sempre vir depois da TAG e da TAG:visited */{
+    color: coral;
+}
+
+/* Seletor de TAG com pseudo-classe */
+a:active /* Deve sempre vir depois do TAG:hover */{
+    color: aqua;
+}
+
+/* Seletor de Classe */
+.bg {
+    height: 100px; /* Altura, caso utilizar %, a TAG, classe, etc. deve estar dentro de algo. Caso utilizar vh(vertical height) ocupa todo espaço vertical do usuário */
+    width: 100%; /* Largura */
+    background-color: aqua; /* Cor de fundo */
+    background-image: url('https://images.unsplash.com/photo-1731955196267-e863d6f39794?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D'); /* Adiciona imagem de uma url */
+    background-size: cover; /* Comportamento do plano de fundo. Cover, estende a imagem, pode acontecer de cortar a imagem. Contain, mostra o plano de fundo inteiro, pode acontecer de duplicar */
+    background-repeat: no-repeat; /* Utilizado junto com o background-size contain para não repetir o plano de fundo */
+    background-position: center; /* Define a posição da imagem para centro */
+    background-attachment: fixed; /* Efeito de texto subindo por cima da imagem. Em alguns navegadores não funciona */
+}
+/*  */
