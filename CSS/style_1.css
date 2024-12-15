@@ -1,0 +1,113 @@
+* {
+    margin: 0; /* zera a margem da página */
+    padding: 0; /* zera o padding da página */
+    box-sizing: border-box; /* evita de quando utilizar padding em um elemento, ele aumente de tamanho */
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Times New Roman';
+    font-size: 1.8rem;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table tr:first-child /* Adiciona estilo ao 1° tr encontrado */{
+    background-color: steelblue;
+    color: #fff;
+}
+
+table tr:nth-child(2n + 3) /* 'n' sempre é zero, '2n' é para contar a partir da 2 linha, aplicando estilo a partir da 3 linha, caso tenha mais linhas, precisa aumentar o número após o + */{
+    background-color: #AAA;
+}
+
+table {
+    font-size: 2.4rem;
+    border-collapse: separate; /* estilo de borda da tabela */
+}
+
+h1 {
+    color: blueviolet;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', arial, cursive;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+.novo-em {
+    font-size: 300%;
+}
+
+p {
+    font-size: 1.8rem;
+    text-align: justify;
+    text-indent: 90px;
+}
+
+a {
+    font-size: 2.4rem;
+    color:  red;
+}
+
+a:visited {
+    color: darkgreen;
+}
+
+a:hover {
+    color: coral;
+}
+
+.bg {
+    height: 20vh;
+    width: 100vw;
+    background-color: #555;
+    background-image: url('https://plus.unsplash.com/premium_photo-1673240159028-1ddae0a75009?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+     /* background-attachment: fixed; */
+}
+
+ul, ol {
+    padding-left: 3.2rem;  /* espaçamento depois da borda esquerda */
+}
+
+ul {
+    list-style: square;  /* estilo de marcadores */
+}
+
+ol {
+    list-style: decimal-leading-zero; /* bom para trabalhar com listas que tenha 10 elementos ou mais */
+}
+
+.box {
+    height: 10rem;
+    width: 20rem;
+    border: 1.0rem solid red; /* 1° grossura da borda, 2° estilo da borda, 3° cor da borda */
+    display: inline-block; /* 'inline' não se comporta bem quando utilizamos tamanhos bem definidos. */
+     /* display: none; some com o elemento da tela */
+    margin: 1.5rem; /* tem efeito fora do elemento, adiciona récuo */
+    padding: 1.5rem; /* tem efeito dentro do elemento, aumenta o elemento, utilizar quando tem algo dentro do elemento */
+    border-radius: 0.4rem; /* arredondamento de borda */
+}
+
+img {
+    height: 10rem;
+    width: 14rem;
+    object-fit: cover; /* utilizar caso a imagem fique distorcida */
+    display: inline;  /* é o padrão de imagem */
+}
+ /*  */
