@@ -1,0 +1,144 @@
+* {
+    margin: 0; /* zera a margem da página */
+    padding: 0; /* zera o padding da página */
+    box-sizing: border-box; /* evita de quando utilizar padding em um elemento, ele aumente de tamanho */
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Times New Roman';
+    font-size: 1.8rem;
+}
+
+.bg {
+    height: 20vh;
+    width: 100vw;
+    background-color: #555;
+    background-image: url('https://plus.unsplash.com/premium_photo-1673240159028-1ddae0a75009?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+     /* background-attachment: fixed; */
+}
+
+h1 {
+    color: blueviolet;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', arial, cursive;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+
+table {
+    font-size: 2.4rem;
+    border-collapse: separate; /* estilo de borda da tabela */
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table tr:first-child /* Adiciona estilo ao 1° tr encontrado */{
+    background-color: steelblue;
+    color: #fff;
+}
+
+table tr:nth-child(2n + 3) /* 'n' sempre é zero, '2n' é para contar a partir da 2 linha, aplicando estilo a partir da 3 linha, caso tenha mais linhas, precisa aumentar o número após o + */{
+    background-color: #c7c7c7;
+}
+
+/* SELETORES PERSONALIZADOS */
+
+[data-company="GCO"] /* atributo customizado do HTML, para atingir todos elementos do atributo é só retirar do '=' pra frente */{
+    background-color: aqua;
+}
+
+/* RESPONSIVIDADE, A ORDEM É IMPORTANTE CASO NÃO DEFINA UM INTERVALO DE TAMANHO */
+
+/* media 'screen' para customizar a partir do tamanho de tela */
+@media screen and (min-width: 1000px){
+    .bg {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width:999px){
+    .bg {
+        height: 80vh;
+    }
+}
+
+/* media 'print' para customizar a página para impressão */
+@media print {
+    .bg {
+        display: none;
+    }
+}
+
+/* ANIMAÇÕES */
+
+/* h1 { */
+    /* display: none; */ /* não ocupa espaço na tela */
+    /* visibility: hidden; */ /* ainda ocupa espaço na tela, mas o elemento não fica clicável */
+    /*opacity: 0.4; *//* O elemento ainda fica clicável mesmo em '0.0' 
+} */
+a {
+    background: steelblue;
+    color: #fff;
+    border: none;
+    font-size: 2.8rem;
+    padding: 0.6rem 2.4rem;
+    cursor: pointer;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease-in-out, background-color 1s ease-in-out; /* 'all' é tudo */
+
+    display: block;
+}
+
+/* [data-anchor="products"] { */
+    /* display: none; */ /* não ocupa espaço na tela */
+    /* visibility: hidden; */ /* ainda ocupa espaço na tela, mas o elemento não fica clicável */
+    /*opacity: 0.4; */ /* O elemento ainda fica clicável mesmo em '0.0' */
+    /* transform: scale(0.5) rotate(30deg) translateY(10rem); Vai ajudar bastante a fazer as animações
+} */
+
+[data-anchor="products"]:hover {
+    background-color: black;
+    color: #fff;
+    transform: scale(1.2); /* 'scale' muda o tamanho do elemento em escala */
+}
+
+[data-anchor="team"] {
+    margin-top: 2rem;
+    animation: pulse 2s infinite;
+    animation-direction: alternate; /* Faz a animação ficar em loop */
+    transform: scale(1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.35);
+        opacity: 0.56;
+    }
+}
+
+/* PESQUISAR PROPRIEDADES ANIMATION */
