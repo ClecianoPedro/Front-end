@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'arial';
+    font-size: 1.8rem;
+}
+
+/* main {
+    padding: 7rem 0; /* 7rem na vertical e 0 na horizontal 
+} */
+
+h1 {
+    color: blueviolet;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', arial, cursive;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.boxes {
+    /* height: calc(100vh - (7 * 2rem));  corrige o efeito de overflow que teríamos na página devido ao padding na 'main' de 7rem na vertical */
+    height: calc(100vh);
+    position: relative;
+
+    display: flex;
+    /* flex-direction: row; /* direção dos objetos flex, padrão 'row' */
+    /* flex-wrap: wrap; /* quebra linha dos objetos flex, padrão 'nowrap' */
+    flex-flow: row wrap; /* funciona como as 2 propriedades acima */
+    justify-content: center; /* pega o eixo principal que temos da propriedade 'flex-direction' e direciona a partir do inicio do mesmo */
+    /* align-items: center; /* pega o eixo secundário que seria no caso o vertical, alinha na vertical */
+    align-content: center; /* alinha o conteúdo na melhor ordem */
+    gap: 2rem 5rem; /* espaçamento entre os items (trabalha com os eixos X e Y), 2 vertical, 10 horizontal */
+
+}
+
+.box {
+    min-height: 10rem;
+    min-width: 20rem;
+    padding: 1.5rem;
+    border: 10px solid red;
+    border-radius: 0.4rem;
+    background-color: blue;
+    color: #fff;
+    font-size: 4rem;
+    order: 10; /* modifica a ordem dos elementos, tem que ter cuidado */
+    flex: 1; /* determina quantas unidades o elemento pode crescer a mais que os outros caso ele tenha espaço disponível */
+    /* flex-basis: 30%; /* determina um tamanho fixo para o elemento, ter cuidado com o 'gap', 'padding', etc. */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.box:nth-child(3) {
+    order: 10; /* modifica a ordem dos elementos, tem que ter cuidado, caso utilizar, tem que definir a ordem dos elementos anteriores */
+}
+
