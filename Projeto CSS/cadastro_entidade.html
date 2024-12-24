@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Entidade</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/fontawesome-6.7.2/css/all.css">
+</head>
+<body>
+    <div class="content">
+        <aside>
+            <img src="assets/logo.svg" alt="Imagem de uma mulher com cabelos cacheados volumosos de jaqueta vermelha, blusa preta, calça branca, e um cachorro branco de coleira com a lingua para fora atrás dela">
+
+            <h1><span>We</span> Form</h1>
+        </aside>
+
+        <main>
+            <header>
+                <a href="index.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+
+                <h2>Nova <span>entidade</span></h2>
+            </header>
+
+            <form action="">
+                <label for="input-name">nome</label>
+                <input id="input-name" type="text">
+
+                <label for="input-field">campo de atuação</label>
+                <div class="select-div">
+                    <select id="input-field">
+                        <option value=""disabled selected>Selecione uma opção</option>
+                        <option value="abrigo">Abrigo de animais</option>
+                    </select>
+                </div>
+                
+                <div class="points">
+                    <label for="input-collect">pontos de coleta</label>
+                    <input id="input-collect" type="text">
+                    
+                    <button>
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button>
+                </div>
+            </form>
+
+            <div class="actions">
+                <a href="">Cadastrar</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
