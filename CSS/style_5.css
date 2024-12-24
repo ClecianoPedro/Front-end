@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.box {
+    padding: 1.5rem;
+    border: 1rem solid red;
+    border-radius: 0.4rem;
+    background-color: blue;
+    color: white;
+    font-size: 4rem;
+    flex: 1;
+
+    display: flex;
+    gap: 0 2rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.box p, button {
+    font-size: 4rem;
+}
+
+.boxes {
+    height: calc(100vh);
+    position: relative;
+
+    display: grid;
+    justify-content: flex-start;
+    gap: 1rem 5rem;
+    /* O padding influencia nas 2 propriedades do grid, pode ser usado 'px' para tamanho, pode ser feito também com a função repeat(qtd. de vezes , tamanho) */
+    grid-template-columns: 3fr 1fr 1fr 1fr; /* 'fr' é unidade flexível, cada 'fr' é uma coluna, o número antes do 'fr' significa o quanto aquela coluna vai ocupar do espaço */
+    /* grid-template-rows: 1fr 2fr; 'fr' é unidade flexível, cada 'fr' é uma linha, o número antes do 'fr' significa o quanto aquela linha vai ocupar do espaço */
+}
+
+/* ESTUDAR MAIS SOBRE O AS PROPRIEDADES DO DISPLAY GRID TEMPLATE */
