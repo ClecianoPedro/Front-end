@@ -17,3 +17,9 @@ const somaDasNotas = nota1 + nota2;
 let mediaDasNotas = somaDasNotas / 2;
 console.log("Soma das notas =", somaDasNotas); // Imprimindo texto com variáveis, a ',' já adiciona um espaço após ela
 console.log("Média das notas =", mediaDasNotas);
+
+// Biblioteca Math
+const numero = 16;
+const raizDoNumero = Math.sqrt(numero);
+
+console.log("Raiz quadrada de 16 =", raizDoNumero);
