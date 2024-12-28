@@ -21,3 +21,8 @@ console.log(idade, typeof idade);
 console.log(altura, typeof altura);
 console.log(estudando, typeof estudando);
 console.log(semConteudo, typeof semConteudo);
+
+// Declarando n° variáveis com 1 comando
+var curso = "Front-end" , topico = "JavaScript Básico I";
+
+console.log(curso, topico);
