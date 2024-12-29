@@ -1,7 +1,0 @@
-Assincronismo
-
-No JavaScript, a programação assíncrona pode ser aplicada de três formas.
-
-1. Por callbackas (função de retorno ou chamada de retorno)
-2. Por promises (promessas)
-3. Resolvendo promises utilizando async/await 
