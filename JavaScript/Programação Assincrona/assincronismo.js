@@ -72,11 +72,17 @@ lerAquivoPromise()
 
 async function leituraDeDados() {
     console.log("Isso é executado antes da promise ser resolvida");
-
-    const retornoDaPromise = await lerAquivoPromise(); // Espera a promise ser resolvida para avançar no código
-
-    console.log(retornoDaPromise)
-    console.log("Isso é executado DEPOIS da promise ser resolvida");
+    // Forma otimizada para dar manutenção no código
+    try {
+        const retornoDaPromise = await lerAquivoPromise(); // Espera a promise ser resolvida para avançar no código
+        console.log(retornoDaPromise)
+        console.log("Isso é executado DEPOIS da promise ser resolvida");
+    } catch (err) {
+        console.log(err)
+        console.log("Isso aqui é executado depois da promise (caso de erro)")
+    } finally {
+        console.log("Dentro do finally")
+    }
 };
 
 leituraDeDados();
