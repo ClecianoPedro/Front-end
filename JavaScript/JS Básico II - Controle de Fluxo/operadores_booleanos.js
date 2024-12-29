@@ -16,3 +16,16 @@ console.log(numero1 > numero2); // false
 console.log(numero1 < numero2); // true
 console.log(numero1 <= numero2); // true
 console.log(numero1 >= numero2); // false
+
+// Operadores 
+
+const idadePessoa1 = 16;
+const idadePessoa2 = 39;
+
+console.log(idadePessoa1 >= 18); // false
+console.log(idadePessoa2 >= 18); // true
+
+console.log(idadePessoa2 >= 18 && idadePessoa2 >= 18); // false, '&&' é o mesmo que 'and'
+console.log(idadePessoa2 >= 18 || idadePessoa2 >= 18); // true, '||' é o mesmo que 'or'
+console.log(!true); // Inverte o valor
+console.log(!(idadePessoa1 >= 18)); // Os parenteses são para verificar primeiro o valor dentro dele e somente depois invertê-lo
