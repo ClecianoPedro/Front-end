@@ -1,0 +1,3 @@
+Nome: Pedro
+Idade: 27
+Altura: 1.77
