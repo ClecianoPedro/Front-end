@@ -88,11 +88,16 @@ function somar(num1: number, num2: number): number {
     return num1 + num2
 }
 
-// Utility Types
+// Utility Types: A ideia é que possa criar novos tipos a partir de tipos já existentes
 
-//1. Partial
+// 1. Partial
 
 type PessoaPartial = Partial<Pessoa>;
 const Pessoa3: PessoaPartial = {
-    
+
 }
+
+// 2. Required
+
+type PessoaRequired = Required<Pessoa>;
+
