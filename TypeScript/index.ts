@@ -28,7 +28,7 @@ const pessoa: [string, number] = ["Pedro", 27]; // Tipagem de Tupla (pode ter ma
 
 // Interface
 // Criando "Tipo" customizado
-interface Pessoa {
+interface Pessoaa {
     nome: string;
     idade: number;
     profissao?: string; // Parâmetro opcional
@@ -36,7 +36,7 @@ interface Pessoa {
 }
 
 // Declarando objeto seguindo a "interface" Pessoa
-const pessoa1: Pessoa = {
+const pessoa1: Pessoaa = {
     nome: "Pedro",
     idade: 27,
     profissao: "Desenvolvedor",
@@ -45,7 +45,7 @@ const pessoa1: Pessoa = {
 
 // Type
 // Tipo abstrato
-type Pessoa2 = {
+type Pessoaa2 = {
     nome: string;
     idade: number;
     altura: number;
@@ -55,7 +55,7 @@ type Pessoa2 = {
 type MyString = string; // Declarando um "Tipo genérico"
 
 // Declarando objeto seguindo o "type" Pessoa2
-const pessoa2: Pessoa2 = {
+const pessoa2: Pessoaa2 = {
     nome: "Pedro",
     idade: 27,
     profissao: "Desenvolvedor",
@@ -92,22 +92,22 @@ function somar(num1: number, num2: number): number {
 
 // 1. Partial
 
-type PessoaPartial = Partial<Pessoa>;
-const Pessoa3: PessoaPartial = {
+type PessoaaPartial = Partial<Pessoaa>;
+const Pessoa3: PessoaaPartial = {
 
 }
 
 // 2. Required
 
-type PessoaRequired = Required<Pessoa>;
+type PessoaaRequired = Required<Pessoaa>;
 
 // 3. Pick
 
-type PessoaPicked = Pick<Pessoa, "nome" | "idade">;
+type PessoaaPicked = Pick<Pessoaa, "nome" | "idade">;
 
 // 4. Omit
 
-type PessoaOmit = Omit<Pessoa, "profissao">
+type PessoaaOmit = Omit<Pessoaa, "profissao">
 
 // 5. Exclude
 
@@ -115,7 +115,7 @@ type CriterioExclude = Exclude<Criterio, "greater">
 
 // 6. Record
 
-type Pessoas = Record<string, Pessoa>;
+type Pessoas = Record<string, Pessoaa>;
 
 const pessoas: Pessoas = {
     "123.456.789-00": {
