@@ -65,7 +65,10 @@ const pessoa2: Pessoa2 = {
 // Union Types
 // Literal Types
 
-function chooseNumber(numero1: number, numero2: number, criterio?: "greater" | "lower") {
+// Type Aliases
+type Criterio = "greater" | "lower";
+
+function chooseNumber(numero1: number, numero2: number, criterio?: Criterio) {
     switch(criterio) {
         case "greater":
             return numero1 > numero2 ? numero1 : numero2
