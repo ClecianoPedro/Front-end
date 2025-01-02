@@ -101,3 +101,7 @@ const Pessoa3: PessoaPartial = {
 
 type PessoaRequired = Required<Pessoa>;
 
+// 3. Pick
+
+type PessoaPicked = Pick<Pessoa, "nome" | "idade">;
+
