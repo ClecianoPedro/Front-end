@@ -78,3 +78,9 @@ const professor = new Professor("Elisson", 35, 1.85, "123-456-789-03", "0001");
 console.log(professor);
 professor.dormir();
 professor.ensinar();
+
+// Polimorfismo
+console.log(pessoa3 instanceof Pessoa); // true
+console.log(pessoa3 instanceof Professor); // false
+console.log(professor instanceof Pessoa); // true
+console.log(professor instanceof Professor); // true
