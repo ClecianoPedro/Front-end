@@ -15,3 +15,11 @@ const numeros1: Array<number> = [1, 2, 3 ,4, 5]; // Tipagem de array (forma mais
 const misto: (number | string)[] = ["Pedro", 27, 1.83]; // Tipagem de array misto (não recomendado)
 
 const idades: number[] = []; // Iniciando array vazio
+
+idades.push(23)
+idades.push(38)
+idades.push(12)
+idades.push(49)
+idades.push(16)
+
+const menoresDeIdade = idades.filter(idade => idade < 18); // Inferência de tipo
