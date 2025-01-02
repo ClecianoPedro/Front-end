@@ -113,3 +113,19 @@ type PessoaOmit = Omit<Pessoa, "profissao">
 
 type CriterioExclude = Exclude<Criterio, "greater">
 
+// 6. Record
+
+type Pessoas = Record<string, Pessoa>;
+
+const pessoas: Pessoas = {
+    "123.456.789-00": {
+        nome: "Pedro",
+        idade: 27,
+        altura: 1.85
+    },
+    "123.456.789-01": {
+        nome: "Maria",
+        idade: 26,
+        altura: 1.62
+    }
+}
