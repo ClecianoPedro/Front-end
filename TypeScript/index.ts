@@ -87,3 +87,12 @@ const numeroEscolhido = chooseNumber(10, 20);
 function somar(num1: number, num2: number): number {
     return num1 + num2
 }
+
+// Utility Types
+
+//1. Partial
+
+type PessoaPartial = Partial<Pessoa>;
+const Pessoa3: PessoaPartial = {
+    
+}
