@@ -61,3 +61,22 @@ const pessoa2: Pessoa2 = {
     profissao: "Desenvolvedor",
     altura: 1.83
 };
+
+// Union Types
+// Literal Types
+
+function chooseNumber(numero1: number, numero2: number, criterio?: "greater" | "lower") {
+    switch(criterio) {
+        case "greater":
+            return numero1 > numero2 ? numero1 : numero2
+        case "lower":
+            return numero1 < numero2 ? numero1 : numero2
+        default:
+            const numeroAleatorio = Math.random();
+            if (numeroAleatorio >= 0.5) return numero1
+            return numero2;
+    };
+    
+};
+
+const numeroEscolhido = chooseNumber(10, 20)
