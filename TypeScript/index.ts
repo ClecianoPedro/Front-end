@@ -42,3 +42,22 @@ const pessoa1: Pessoa = {
     profissao: "Desenvolvedor",
     altura: 1.83
 };
+
+// Type
+// Tipo abstrato
+type Pessoa2 = {
+    nome: string;
+    idade: number;
+    altura: number;
+    profissao?: string;
+}
+
+type MyString = string; // Declarando um "Tipo genérico"
+
+// Declarando objeto seguindo o "type" Pessoa2
+const pessoa2: Pessoa2 = {
+    nome: "Pedro",
+    idade: 27,
+    profissao: "Desenvolvedor",
+    altura: 1.83
+};
