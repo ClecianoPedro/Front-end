@@ -25,3 +25,20 @@ idades.push(16)
 const menoresDeIdade = idades.filter(idade => idade < 18); // Inferência de tipo
 
 const pessoa: [string, number] = ["Pedro", 27]; // Tipagem de Tupla (pode ter mais elementos)
+
+// Interface
+// Criando "Tipo" customizado
+interface Pessoa {
+    nome: string;
+    idade: number;
+    profissao?: string; // Parâmetro opcional
+    altura: number;
+}
+
+// Declarando objeto seguindo a "interface" Pessoa
+const pessoa1: Pessoa = {
+    nome: "Pedro",
+    idade: 27,
+    profissao: "Desenvolvedor",
+    altura: 1.83
+};
