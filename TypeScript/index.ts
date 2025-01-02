@@ -23,3 +23,5 @@ idades.push(49)
 idades.push(16)
 
 const menoresDeIdade = idades.filter(idade => idade < 18); // Inferência de tipo
+
+const pessoa: [string, number] = ["Pedro", 27]; // Tipagem de Tupla (pode ter mais elementos)
