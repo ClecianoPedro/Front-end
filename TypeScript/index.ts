@@ -105,3 +105,7 @@ type PessoaRequired = Required<Pessoa>;
 
 type PessoaPicked = Pick<Pessoa, "nome" | "idade">;
 
+// 4. Omit
+
+type PessoaOmit = Omit<Pessoa, "profissao">
+
