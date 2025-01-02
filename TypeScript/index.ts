@@ -109,3 +109,7 @@ type PessoaPicked = Pick<Pessoa, "nome" | "idade">;
 
 type PessoaOmit = Omit<Pessoa, "profissao">
 
+// 5. Exclude
+
+type CriterioExclude = Exclude<Criterio, "greater">
+
