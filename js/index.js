@@ -49,3 +49,15 @@ console.log(primeiroParagrafo);
 console.clear();
 
 emailInput[0].value = "pedro@gmail.com";
+
+// Criando elementos na página
+
+const listaUl = document.querySelector("ul#lista"); // Selecionando elemento já existente
+
+const listaLis = document.querySelectorAll("ul > li"); // Selecionando todas TAGs "li" após o "ul"
+
+const novaTagLi = document.createElement("li"); // Criando uma TAG "li" vazia
+novaTagLi.textContent = "Segundo item"; // Adicionando um texto dentro da TAG "li"
+// listaUl.appendChild(novaTagLi); // Adicionando ao final do elemento já existente
+
+listaUl.insertBefore(novaTagLi, listaLis[1]); // 1° é o elemento que estamos adicionando, 2° é a posição antes de quem queremos inseri-lo
