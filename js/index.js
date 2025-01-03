@@ -29,3 +29,23 @@ console.log(imagem);
 
 const paragrafos = document.querySelectorAll("p");
 console.log(paragrafos);
+
+console.clear();
+
+// Acessando/alterando o conteúdo HTML das TAGs
+
+const primeiroParagrafo = document.querySelector("p.paragrafo");
+console.log(primeiroParagrafo);
+
+console.log("textContent:", primeiroParagrafo.textContent); // Pega todo o conteúdo em texto, ignorando as TAGS dentro da 1° TAG
+
+console.log("innerHTML:", primeiroParagrafo.innerHTML); // Pega todo o conteúdo da TAG e TAGs que estejam dentro da 1° TAG
+
+primeiroParagrafo.textContent = "Outra coisa";
+
+primeiroParagrafo.innerHTML = "<strong>Outra coisa</strong>"
+console.log(primeiroParagrafo);
+
+console.clear();
+
+emailInput[0].value = "pedro@gmail.com";
