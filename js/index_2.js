@@ -21,3 +21,12 @@ decreaseButton.addEventListener("click", (event) => {
 input.addEventListener("input", () => {
     console.log(input.value);
 })
+
+// Adicionando estilos inline ao elemento "contador"
+
+counterElement.style.color = "red";
+counterElement.style.padding = "0 2rem";
+counterElement.style.backgroundColor = "#AAA"; // Utilizar CamelCase quando o nome do atributo contém hífen
+counterElement.style.border = "1px solid black"
+counterElement.style.width = "150px"
+
