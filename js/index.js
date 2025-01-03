@@ -61,3 +61,7 @@ novaTagLi.textContent = "Segundo item"; // Adicionando um texto dentro da TAG "l
 // listaUl.appendChild(novaTagLi); // Adicionando ao final do elemento já existente
 
 listaUl.insertBefore(novaTagLi, listaLis[1]); // 1° é o elemento que estamos adicionando, 2° é a posição antes de quem queremos inseri-lo
+
+// Removendo elemento
+
+listaUl.removeChild(novaTagLi);
