@@ -1,0 +1,32 @@
+Web Storage API
+Introdução
+• Armazenamento de Dados do lado do diente
+• 0 Client-side Storage pode ser utilizado para diferentes finalidades, tais como:
+Personalizar as preferências do site (tema claro ou escuro que o usuário já escolheu em uma visita anterior ao site, por exemplo).
+
+。Atividade anterior persistente do site (por exemplo, armazenar o conteúdo de um carrinho de compras de uma sessão anterior, lembrando se um usuário estava conectado anteriormente).
+
+。Salvar dados localmente para que, o download de um site seja mais rápido.
+
+。Salvar, localmente, documentos gerados durante o uso de alguma aplicação para uso offline.
+
+•	Os tipos de Client-side Storage que existem nos navegadores são: Cookies, Local Storage e Session Storage.
+
+localStorage e sessionStorage (Funcionam em modelo "chave-valor")
+
+•	O localStorage: ele guarda os dados de cada aplicação de forma isolada, baseando-se na URL base da página. Todos esses dados continuam armazenados mesmo se o navegador for fechado e aberto novamente.
+
+•	O sessionStorage : o armazenamento funciona da mesma forma nele, mas os dados ficam disponíveis apenas durante a sessão da página. Em outras palavras, enquanto a aba do navegador estiver aberta, o que inclui recarregamentos e restaurações de páginas, os dados serão guardados.
+
+•   Métodos:
+        setItem / Setar um item (key/value)
+            localStorage.setItem("nome", "Pedro")
+
+        getItem / Buscar item (key)
+            localStorage.getItem("nome)
+
+        removeItem / Remover item (key)
+            localStorage.getItem("nome")
+
+        clear / Limpar dados associados ao site específico ()
+            localStorage.clear()

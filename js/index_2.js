@@ -40,17 +40,35 @@ counterElement.style.width = "150px"
 
 const themeButton = document.querySelector("#theme");
 
-let darkTheme = false;
+let darkTheme;
 
-themeButton.addEventListener("click", () => {
-    darkTheme = !darkTheme; // darkTheme recebe o contrário dela
-
+// Criando função para carregar o tema salvo anteriormente
+function loadTheme(theme) {
     const body = document.querySelector("body");
-    if (darkTheme) {
+    if (theme) {
     body.style.backgroundColor = "black";
     body.style.color = "white";
     } else {
         body.style.backgroundColor = "white";
         body.style.color = "black";
     }
+}
+// Definindo uma função que será carregada ao carregar o conteúdo da página
+window.onload = () => {
+    const isDarkThemeStorage = localStorage.getItem("isDarkTheme"); // Retorno do "getItem" sempre será String
+
+    // isDarkThemeStorage = "true" => true
+    // isDarkThemeStorage = "false" => false
+    // isDarkThemeStorage = "null" => false
+    darkTheme = isDarkThemeStorage === "true";
+
+    loadTheme(darkTheme);
+    
+};
+
+themeButton.addEventListener("click", () => {
+    darkTheme = !darkTheme; // darkTheme recebe o contrário dela
+    localStorage.setItem("isDarkTheme", darkTheme);
+
+   loadTheme(darkTheme);
 });
