@@ -2,3 +2,25 @@
 /JavaScript/JS Básico II - Controle de Fluxo/tempCodeRunnerFile.js
 /JavaScript/Programação Assincrona/tempCodeRunnerFile.js
 /venv
+
+# dependencies
+/React/my-app/node_modules
+/React/my-app/.pnp
+/React/my-app/.pnp.js
+
+# testing
+/React/my-app/coverage
+
+# production
+/React/my-app/build
+
+# misc
+/React/my-app/.DS_Store
+/React/my-app/.env.local
+/React/my-app/.env.development.local
+/React/my-app/.env.test.local
+/React/my-app/.env.production.local
+
+/React/my-app/npm-debug.log*
+/React/my-app/yarn-debug.log*
+/React/my-app/yarn-error.log*
