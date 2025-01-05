@@ -1,0 +1,12 @@
+Rendering Patterns
+
+SPA (SINGLE PAGE APPLICATION) (React)
+
+SSR (SERVER SIDE RENDERING) (Next.js)
+
+SSG (STATIC SITE GENERATION) (Next.js)
+
+
+
+
+React usa SPA (SINGLE PAGE APPLICATION)
