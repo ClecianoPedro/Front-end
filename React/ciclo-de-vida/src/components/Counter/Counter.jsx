@@ -13,14 +13,22 @@ export class Counter extends React.Component {
         console.log("O componente -contador- será montado!")
     }
 
+    // Criando método para usar quando rolar a página
+    consoleScroll() {
+        console.log("Rolando a página...")
+    }
+
     // Última etapa do ciclo de montagem
     componentDidMount() {
         console.log("O componente foi montado! ✅")
-    }
+
+        // Mostrando a importância de remover o evento após o componente ser desmontado...
+        document.addEventListener("scroll", this.consoleScroll)
+        }
 
     // Método sempre chamado quando uma prop ou estado for atualizado
     shouldComponentUpdate() {
-        return true
+        return true;
     }
 
     // Não utilizar componentWillUpdate()
@@ -32,6 +40,14 @@ export class Counter extends React.Component {
     // Última etapa do ciclo de atualização
     componentDidUpdate() {
         console.log("O componente foi atualizado! ✅")
+    }
+
+    // Única etapa do ciclo de desmontagem (útil para: remover eventos que estavam associados ao componente, cancelar uma requisição HTTP, invalidar algum timer)
+    componentWillUnmount() {
+        console.log("O componente será desmontado...")
+        // Removendo evento ao desmonstar o componente
+        document.removeEventListener("scroll", this.consoleScroll)
+
     }
 
     // Terceira etapa do ciclo de montagem
